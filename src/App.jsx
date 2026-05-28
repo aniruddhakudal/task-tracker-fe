@@ -11,6 +11,7 @@ function ProtectedRoute({ children }) {
   return children
 }
 
+
 function PublicRoute({ children }) {
   const { user, loading } = useAuth()
   if (loading) return <div className="loading-screen">Loading...</div>
